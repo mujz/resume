@@ -49,6 +49,8 @@ _Carpooling android app for local events._
 * MongoDB and Parse on the backend
 
 ### JoCinemas
+![JoCinemas Screenshot In Theaters](/Nexus_5-1.png) ![JoCinemas Screenshot Movie Details](/Nexus_5-2.png)
+
 _Movie showtimes android app for Amman, Jordan._ [Play Store](https://play.google.com/store/apps/details?id=co.mujz.jocinemas)  - [Source](https://git.mujz.ca/mujz/JoCinemas)
 * Parse HTML to get showtimes, OMDB's REST API for additional details on movies.
 * Cache locally using sqlite database. only fetch if remote is different from local
