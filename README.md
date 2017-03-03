@@ -9,10 +9,10 @@
 # Professional Experience
 ### Full-Stack Web Developer @ Change Heroes (Nov 2015 - Nov 2016)
 * Built a friend-to-friend fundraising platform with AWS (mostly ECS, ELB, and RDS), Docker, PostgreSQL, Node.js, AngularJS.
-* Since I was the only one in the team who knew Docker, I set up our continuous delivery and zero-downtime process using Docker, Webpack, and CircleCI for building and testing, AWS ECS and ELB for hosting, managing, and load balancing the cluster. I was also in charge of getting the developers' environments set up with Docker.
-* I owned the server-side code, which includes a Node.js server for the API, PostgreSQL server running on AWS RDS for the database, and an NGINX server for reverse-proxy and static hosting of the AngularJS app.
-* The NodeJS server handled authentication, external REST API to the database, email notifications, very fast search using pg-search library (more details about this in the JavaScript section), payment processing with Stripe, and metrics.
-* Among the main things that I spent a lot of time on are validation and security of REST API, architecture of the Node.js app, AngularJS app, and the database, and optimization and speed
+* Brought down the deployment time to 5 minutes and reduced environment incosistency bugs by setting up a continuous delivery and zero-downtime process using Docker and containerization. Also used Webpack, and CircleCI for building and testing, AWS ECS and ELB for hosting, managing, and load balancing the cluster. This change brought the website uptime to 99.99%.
+* Owned the server-side code, which includes a Node.js server for the API, PostgreSQL server running on AWS RDS for the database, and an NGINX server for reverse-proxy and static hosting of the AngularJS app.
+* The NodeJS server handled authentication, exposing external REST API to the database, email notifications, very fast search using pg-search library (more details about this in the JavaScript section), payment processing with Stripe, and metrics.
+* Spent a lot of time on validation and security of REST API, architecture of the Node.js app, AngularJS app, and the database, and speed optimization using techniques like http2 support, compression, minimizing the number of requests to the database using include statements. The average response coming back from the node server to the browser took approximately 162ms, and the entire app loades up in just under a second on average.
 
 # Projects
 ## JavaScript (Node.js):
@@ -45,22 +45,19 @@ _Offline-first android app for my personal blog._
 ![Yalla Screenshot1](https://lh3.googleusercontent.com/GJqt45DEx6l5EyAoSj4dA5HSdjk0LUBNpCGm9HBt21drPKwtVaCmXioMts-Vf2nB3CE=h310-rw) ![Yalla Screensht 2](https://lh3.googleusercontent.com/BvPZCuecsrjgzNy_XQ7j45xKpqR30iYHfNOKfD1xKdF_ubNOke9_WdwNFj_ZumwarQ=h310-rw) ![Yalla Screensht 3](https://lh3.googleusercontent.com/qHanO6TYzx-HEPu39GFW3l47TBd6PvwqStEQCTQhWhlyPNeEHRnOAsRp6p2SjggEdQ0=h310-rw)
 
 _Carpooling android app for local events._
-* Clean user interface following Google's material design guidelines. A lot of work went into optimizing the ui to make it simple, beautiful, and compatible with the various screen sizes and Android versions.
-* MongoDB and Parse on the backend
+* Clean user interface following Google's material design guidelines. Optimized user experience by using a design that is simple, familiar, and compatible with the various screen sizes and Android versions.
+* Used MongoDB and Parse on the backend.
 
 ### JoCinemas
 ![JoCinemas Screenshot In Theaters](/nexus_5-1.png) ![JoCinemas Screenshot Movie Details](/nexus_5-2.png)
 
 _Movie showtimes android app for Amman, Jordan._ [Play Store](https://play.google.com/store/apps/details?id=co.mujz.jocinemas)  - [Source](https://git.mujz.ca/mujz/JoCinemas)
 * Parse HTML to get showtimes, OMDB's REST API for additional details on movies.
-* Cache locally using sqlite database. only fetch if remote is different from local
+* Cache locally using a sqlite database, and only fetch if remote database is different from local.
 
 ## C
 ### Unix Shell
 Wrote, and memory tested, a basic shell with a history feature using only the standard C libraries.
-
-### Linked Lists
-A library that implements the basic functions of linked lists.
 
 # Volunteer Experience
 ## Fikra Space (Sep 2012 - Oct 2013): Cofounder ([Website](https://www.facebook.com/FikraSpace))
@@ -71,4 +68,4 @@ _The first hackerspace in Baghdad, Iraq._
 
 ## Startup Weekend Baghdad and Amman (Jun 2013 - Aug 2015): Cofounder
 _Weekend-long event for participants to form teams and turn their ideas into startups._ [Website](https://startupweekend.org)
-* Organized the events, built the websites and Android apps, and MCed the event
+* Organized the events, built the websites and Android apps, and facilitated the event over the course of the weekend.
